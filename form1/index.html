@@ -5,30 +5,52 @@
   </head>
 
   <body>
-    <fieldset>
-      <legend>DATI ANAGRAFICI</legend>
-      <form>
-        <table>
-          <tr>
-            <td><laber for="nome">Nome:</label> </td>
-            <td> <input type="text" id="nome" name="nome" required> <br> </td>
-          </tr>
-          <tr>
-            <td><laber for="cognome">Cognome:</label>
-            <td><input type="text" id="cognome" name="cognome" required> <br>
-          </tr>
-          <tr>
-            <td><laber for="dob">Data di nascita:</label></td>
-            <td><input type="date" id="dob" required></td>
-          </tr>
-          <tr>
-            <td><label for="sesso">Sesso:</label></td>
-            <td><select name="sesso" id="sesso">
-                <option value="m">M</option>
-                <option value="f">F</option>
-                <option value="altro">Altro</option>
-            </td>
-      </form>
-    </fieldset>
+    <form>
+      <fieldset>
+        <legend>DATI ANAGRAFICI</legend>
 
+          <table>
+            <tr>
+              <td><laber for="nome">Nome:</label> </td>
+              <td> <input type="text" id="nome" name="nome" required> <br> </td>
+            </tr>
+            <tr>
+              <td><laber for="cognome">Cognome:</label>
+              <td><input type="text" id="cognome" name="cognome" required> <br>
+            </tr>
+            <tr>
+              <td><laber for="dob">Data di nascita:</label></td>
+              <td><input type="date" id="dob" required></td>
+            </tr>
+            <tr>
+              <td><label for="sesso">Sesso:</label></td>
+              <td><select name="sesso" id="sesso">
+                  <option value="m">M</option>
+                  <option value="f">F</option>
+                  <option value="altro">Altro</option>
+              </td>
+            <tr>
+              <td><label for="email">Email</label>
+              <td> <input type="text" id="email" name="Email"></td>
+            </tr>
+            <tr>
+              <td><label for="tel">Telefono</label></td>
+              <td><input type="text" name="tel" id="tel"></td>
+            </tr>
+          </table>
+      </fieldset>
+      <fieldset>
+        <legend>Indagine di mercato</legend>
+          <table>
+            <tr>
+              <td><label for="auto">Auto:</label></td>
+              <td><select name="auto" id="auto">
+                  <option value="utilitaria">Utilitaria</option>
+                  <option value="Berlina">Berlina</option>
+                  <option value="SW">Station Wagon</option>
+              </td>
+            </tr>
+            <tr>
+              <textarea></textarea></tr>
+    </form>
   </body>
