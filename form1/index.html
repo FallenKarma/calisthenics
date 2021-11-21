@@ -5,7 +5,7 @@
   </head>
 
   <body>
-    <form>
+    <form method="get" id="form">
       <fieldset>
         <legend>DATI ANAGRAFICI</legend>
 
@@ -51,6 +51,25 @@
               </td>
             </tr>
             <tr>
-              <textarea></textarea></tr>
+              <td><label for="pagamento">Che tipo di pagamento prediligeresti?</label></td>
+              <td><input type="radio" id="contanti" name="pagamento" value="Contanti">
+                  <label for="contanti">Contanti</label> <br>
+                  <input type="radio" id="rate" name="pagamento" value="A rate con Concessionaria">
+                  <label for="rate">Rate</label><br>
+                  <input type="radio" id="finanziaria" name="pagamento" value="Finanziaria">
+                  <label for="finanziaria">Finanziaria</label><br>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="consenso" name="consenso" value="Bike">
+                  <label for="consenso"> Dichiario di dare consenso su uso dei miei<br>
+                      dati personali per usi connessi a codesto contesto.</label><br> </td>
+            </tr>
+            <tr>
+                <td colspan="2"><textarea placeholder="Note su altro"></textarea></td></tr>
+          </table>
+        </fieldset>
+        <input type="submit" value="Invia" form="form">
+        <input type="reset" value="Cancella">
     </form>
   </body>
