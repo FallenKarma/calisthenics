@@ -21,6 +21,10 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
+#titolo{
+  width: 400px;
+  margin:auto;
+}
 h1{
   text-align: center;
   text-shadow: 2px 2px grey;

@@ -7,15 +7,29 @@
       @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Shadows+Into+Light&display=swap');
     </style>
     <script type="text/javascript">
-    var count=0;
+    var count=1357;
     function increment () {
-      count++;
-      document.getElementById("count").innerText=count;
+      if (count<1361){
+        count++;
+        document.getElementById("count").innerText=count;
+      }
+      else {
+        if (count==1361){
+          count++;
+          document.getElementById("count").innerText=count;
+          alert("Siamo felici che tu abbia apprezzato\nla pagina!")
+        }
+      }
     }
+
+    function welcome(){
+      alert("Benvenuto/a in questa pagina!\nSe i contenuti saranno stati di tuo\ngradimento clicca like\nfino a 5 volte in fondo\nalla pagina")
+    }
+
     </script>
   </head>
 
-  <body>
+  <body onload="welcome()" >
     <div id="header">
       <span id="titolo"><b>Lo sport del Calisthenics<b></span>
     </div>
@@ -107,7 +121,7 @@
       </div>
       <div id="riga5">
         <div id="verticale"></div>
-        <div id="esercizi_avanzati" class="box">
+        <div id="esercizi_avanzati" class="box" >
           <h1>Esercizi avanzati</h1>
           Gli esercizi avanzati di calisthenics non possono essere suddivisi nitidamente
           in gruppi muscolari, in quanto stimolano sensibilmente anche molti stabilizzatori e il core. Vediamone alcuni:
@@ -125,3 +139,9 @@
         </div>
       </div>
     </div>
+    <footer>
+      <center><img src="like.png" height="80px" width="80px" onclick="increment()">
+      <p id="count">1357</p> </center>
+    </footer>
+  </body>
+</html>
