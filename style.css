@@ -1,7 +1,7 @@
 
 body
 {
-  background-color: #6699ff;
+  background-image: url(white.jpg);
 }
 nav
 {
@@ -9,13 +9,13 @@ nav
   padding:20px;
   margin:auto;
   text-align: center;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Cinzel', serif;
 }
 h2
 {
   display: inline;
-  padding: 2px 2px 2px 2px;
-  border-left: 2px solid black;
+  padding: 4px 4px 4px 4px;
+  background-color: white;
 }
 #header
 {
@@ -50,9 +50,9 @@ h2
 }
 #titolo
 {
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 100px;
-  text-shadow: 2px 2px #0e989a;
+  font-family: 'Cinzel', serif;
+  font-size: 80px;
+  text-shadow: 2px 2px #0284fe;
 }
 
 #pullup{
@@ -70,6 +70,8 @@ h2
   background-size: cover;
   display: inline-block;
   margin-top:30px;
+  border: 5px solid black;
+  border-radius: 10px;
 }
 #trazione{
   width:300px;
@@ -80,6 +82,8 @@ h2
   border-radius: 20px;
   margin-top: 10px;
   margin-right: 40px;
+  border: 5px solid black;
+  border-radius: 10px;
 }
 #squat{
   float:left;
@@ -90,6 +94,8 @@ h2
   display: inline-block;
   margin-top: 50px;
   margin-left: 70px;
+  border: 5px solid black;
+  border-radius: 10px;
 }
 #verticale{
   float:right;
@@ -126,15 +132,19 @@ h2
   width:70%;
   height: auto;
 }
-
-
 #count{
   font-size: 50px;
-  color:white;
+  color:#0284fe;
   margin: auto;
 }
 footer{
   margin-top: 20px;
+}
+#info{
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-weight: 2000;
+  font-size: 20px;
 }
 .colonna_sinistra{
   float:left;
@@ -144,7 +154,7 @@ footer{
 .box{
   border:3px solid #003300;
   padding:8px;
-  background-color: #CCFFCC;
+  background-color: #00BFFF;
   text-align: justify;
   overflow: auto;
   box-shadow: 7px 7px 30px 2px #02022D;
@@ -152,10 +162,17 @@ footer{
   font-family: 'Cinzel', serif;
   font-size: 20px;
   margin-top: 20px;
+  color: white;
 }
 a:hover{
-  background-color: White;
+  background-color: #0284fe;
+  color:white;
 }
 a:visited{
-  color: blue;
+  color: white;
+}
+a:-webkit-any-link {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
 }
