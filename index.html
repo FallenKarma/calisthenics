@@ -23,7 +23,13 @@
       }
     }
     function welcome(){
-      alert("Benvenuto/a in questa pagina!\nSe i contenuti saranno di tuo\ngradimento clicca like\nfino a 5 volte in fondo\nalla pagina")
+      var caricato = localStorage.getItem('caricato');
+
+      if (caricato != '1'){
+        alert("Benvenuto/a in questa pagina!\nSe i contenuti saranno di tuo\ngradimento clicca like\nfino a 5 volte in fondo\nalla pagina")
+
+          localStorage.setItem('caricato', '1');
+      }
     }
     </script>
   </head>
@@ -33,12 +39,11 @@
       <span id="titolo"><b>Lo sport del Calisthenics<b></span>
     </div>
     <nav>
-      <h2><a href="#cosa">Cos'&egrave;?</a></h2>
-      <h2><a href="#benefici">Benefici</a></h2>
       <h2><a href="#aspetti_negativi">Aspetti negativi</a></h2>
       <h2><a href="https://www.barbrothers.it/parchi-calisthenics/">Dove allenarsi</a></h2>
       <h2><a href="#esercizi_base">Esercizi </a></h2>
       <h2><a href="storia.html">Cenni storici</a></h2>
+      <h2><a href="quiz.html">Quiz</a></h2>
     </nav>
 
     <div id="container">

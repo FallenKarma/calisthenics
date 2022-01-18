@@ -1,0 +1,20 @@
+#titolo{
+  text-align: center;
+  color:red;
+  font-size: 50px;
+}
+
+.quiz{
+  display: inline-block;
+  width: auto;
+  height: auto;
+  font-size: 30px;
+}
+#trazione{
+  display: inline-block;
+  float:right;
+  margin-right: 500px;
+}
+#prova{
+  display: inline-block;
+}

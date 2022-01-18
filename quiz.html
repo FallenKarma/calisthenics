@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="quiz_style.css">
+    <script type="text/javascript">
+        function corretto(){
+          document.getElementById("immagine").src = "corretto.jpg";
+        }
+        function reset(){
+          document.getElementById("immagine").src = "trazione.jpg";
+        }
+        function Errore()
+        {
+            alert("Risposta sbagliata, riprova!")
+        }
+    </script>
+  </head>
+  <body background="white.jpg">
+    <a href="index.html"><img src="home.png" width="50px" height="50px"></a>
+    <h1 id="titolo">Vediamo cosa hai imparato!</h1>
+    <div class="quiz">
+        <form>
+              Quale esercizio è rappresentato nella foto mostrata sulla destra?<br>
+              <input type="radio" value="1" name="q1" onclick="corretto()"">Trazione<br>
+              <input type="radio" value="2" name="q1" onclick="Errore()">Piegamento sulle braccia <br>
+              <input type="radio" value="3" name="q1" onclick="Errore()">Muscle up <br>
+              <input type="radio" value="4" name="q1" onclick="Errore()">Dip<br><br>
+              <div id="prova" onclick="reset()"><input type="reset" value="RESET" ></div>
+        </form>
+    </div>
+    <div id="trazione" >
+      <img src="trazione.jpg" id="immagine" width="200px" height="200px">
+    </div>
+
+  </body>
+</html>
